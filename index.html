@@ -6,12 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>Tip Calculator</title>
 </head>
 
 <body>
     <h1>What's the Split</h1>
+
+    <div class="illustration"></div>
+    <!--above is where I want to place the illustration of someone doing a split-->
+
     <div class="wrapper">
         <!--this div contains the entire calculator-->
         <div class="container" id="topContainer">
@@ -22,13 +26,43 @@
                 <input type="number" placeholder="0.00" id="billTotalInput" onkeyup="calculateBill()" />
             </div>
         </div>
-        <div class="inputContainer">
+        <div class="container">
+            <div class="title">Tip</div>
+            <!--I would change class to something like tip
+            but I don't know how the class will effect everything else. This is a tutorial
+            will revisit again.-->
+            <div class="inputContainer">
+                <span>%</span>
+                <input type="number" onkeyup="calculateBill()" id="tipInput" placeholder="10" />
+            </div>
 
+            <div class="container" id="bottom">
+                <div class="splitContainer">
+                    <div class="title">People</div>
+                    <div class="controls">
+                        <span class="buttonContainer">
+                            <button class="splitButton" onclick="increasingPeople()">
+                                <span class="buttonText"> + </span>
+                            </button>
+                        </span>
+                        <span class="splitAmount" id="numberOfPeople"> 1 </span>
+                        <span class="buttonContainer">
+                            <button class="splitButton" onclick="decreasePeople">
+                                <span class="buttonText"> - </span>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="totalContainer">
+                <div class="title">Total per Person</div>
+                <div class="total" id="perPersonTotal">$0.00</div>
+            </div>
         </div>
-
-        <div></div>
-
     </div>
+
+    <script type="text/javascript" src="script.js"></script>
+
 
 
 </body>
