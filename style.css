@@ -7,3 +7,11 @@ body {
     background: black;
     /*still debating what color pallete to go with*/
 }
+
+.wrapper {
+    height: 525px;
+    width: 360px;
+    color: white;
+    background: ;
+    /*maybe find a gradient hexagonal #*/
+}
