@@ -1,17 +1,33 @@
 * {
     font-family: 'M PLUS Rounded 1c', Avenir Next, Helvetica, sans-serif;
     color: white;
+    font-variant: small-caps;
+    /*cool property to make everything cap but making
+    the caret look larger because it's a smaller version.*/
+
 }
 
 body {
-    background: black;
+    background: #FF8066;
     /*still debating what color pallete to go with*/
+}
+
+h1 {
+    color: #845EC2;
+}
+
+img {
+    height: 300px;
+}
+
+input {
+    caret-color: red;
 }
 
 .wrapper {
     height: 525px;
     width: 360px;
     color: white;
-    background: ;
+    background: #B0A8B9;
     /*maybe find a gradient hexagonal #*/
 }

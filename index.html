@@ -11,23 +11,25 @@
 </head>
 
 <body>
-    <h1>What's the Split</h1>
+    <h1>what the split?!</h1>
 
-    <div class="illustration"></div>
+    <div class="illustration">
+        <img src="illustration.png" alt="">
+    </div>
     <!--above is where I want to place the illustration of someone doing a split-->
 
+    <!-- div below contains the entire calculator-->
     <div class="wrapper">
-        <!--this div contains the entire calculator-->
         <div class="container" id="topContainer">
             <!--bill total container-->
-            <div class="bill">Bill Total</div>
+            <div class="bill">bill total</div>
             <div class="inputContainer">
                 <span>$</span>
                 <input type="number" placeholder="0.00" id="billTotalInput" onkeyup="calculateBill()" />
             </div>
         </div>
         <div class="container">
-            <div class="title">Tip</div>
+            <div class="title">tip</div>
             <!--I would change class to something like tip
             but I don't know how the class will effect everything else. This is a tutorial
             will revisit again.-->
@@ -38,7 +40,7 @@
 
             <div class="container" id="bottom">
                 <div class="splitContainer">
-                    <div class="title">People</div>
+                    <div class="title">people</div>
                     <div class="controls">
                         <span class="buttonContainer">
                             <button class="splitButton" onclick="increasingPeople()">
@@ -55,7 +57,7 @@
                 </div>
             </div>
             <div class="totalContainer">
-                <div class="title">Total per Person</div>
+                <div class="title">total per person</div>
                 <div class="total" id="perPersonTotal">$0.00</div>
             </div>
         </div>
