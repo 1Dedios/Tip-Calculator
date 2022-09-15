@@ -12,7 +12,8 @@ body {
 }
 
 h1 {
-    color: #845EC2;
+    color: #353959;
+    font-style: italic;
     display: flex;
     justify-content: center;
     font-size: 40px;
@@ -30,37 +31,105 @@ input {
     caret-color: red;
 }
 
+/*to hide the up/down arrows on hover over inputs*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 .wrapper {
     height: 525px;
     width: 360px;
     color: white;
-    border-radius: 50px;
+    border-radius: 1.2rem;
     background: linear-gradient(145deg, #7755af, #272639);
     box-shadow: 24px 28px 67px #272639a5,
         -34px -34px 67px #272639;
     margin: auto;
+
+}
+
+#topContainer {
+    padding: 2rem;
+}
+
+/*bill total container*/
+.container {
+    padding: 2rem;
+}
+
+/*controls two bottom containers*/
+.container-bottom,
+.totalContainer {
+    padding: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: -30px;
-    padding-bottom: 30px;
+    justify-content: space-around;
 }
 
-.bill {
-    padding-top: -20px;
-}
 
-.bill,
+
 .title {
-    padding-bottom: 10px;
     font-weight: bold;
+    margin-bottom: 0.6rem;
 }
 
-.inputContainer,
-.container {
-    padding-bottom: 15px;
+.inputContainer {
+    background: #353959;
+    border-radius: 1.4rem;
+    padding: 0 0.8rem;
+    display: flex;
+    align-items: center;
 }
+
+#billTotalInput,
+#tipInput {
+    font-size: 1.2rem;
+    background: none;
+    border: none;
+    outline: none;
+    padding: none;
+}
+
+.buttonContainer {
+    background: #8990ec;
+    display: grid;
+    place-items: center;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+}
+
+.splitButton {
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+    background: none;
+    border: none;
+}
+
+.buttonText {
+    color: #353959 !important;
+}
+
+.splitAmount {
+    font-size: 1.6rem;
+    margin: 0.8rem;
+}
+
+
+.total {
+    font-size: 2rem;
+}
+
 
 .copyright {
     display: flex;
@@ -68,6 +137,8 @@ input {
     margin-top: 30px;
     font-size: 16px;
 }
+
+
 
 @media screen and (max-width: 767px) {
     h1 {
