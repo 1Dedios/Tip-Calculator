@@ -4,7 +4,6 @@
     font-variant: small-caps;
     /*cool property to make everything cap but making
     the caret look larger because it's a smaller version.*/
-
 }
 
 body {
@@ -36,9 +35,9 @@ input {
     width: 360px;
     color: white;
     border-radius: 50px;
-    background: linear-gradient(145deg, #7755af, #8d65d0);
-    box-shadow: 34px 34px 67px #7050a5,
-        -34px -34px 67px #986cdf;
+    background: linear-gradient(145deg, #7755af, #272639);
+    box-shadow: 24px 28px 67px #272639a5,
+        -34px -34px 67px #272639;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -46,8 +45,21 @@ input {
     justify-content: center;
     padding-top: -30px;
     padding-bottom: 30px;
+}
 
+.bill {
+    padding-top: -20px;
+}
 
+.bill,
+.title {
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.inputContainer,
+.container {
+    padding-bottom: 15px;
 }
 
 .copyright {
