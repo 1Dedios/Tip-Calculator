@@ -14,10 +14,17 @@ body {
 
 h1 {
     color: #845EC2;
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    text-shadow: 2px 2px white;
 }
 
-img {
+.illustration {
     height: 300px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
 }
 
 input {
@@ -28,6 +35,24 @@ input {
     height: 525px;
     width: 360px;
     color: white;
-    background: #B0A8B9;
-    /*maybe find a gradient hexagonal #*/
+    border-radius: 50px;
+    background: linear-gradient(145deg, #7755af, #8d65d0);
+    box-shadow: 34px 34px 67px #7050a5,
+        -34px -34px 67px #986cdf;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: -30px;
+    padding-bottom: 30px;
+
+
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 16px;
 }
