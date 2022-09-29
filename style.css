@@ -55,14 +55,17 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 2rem;
 }
 
-/*bill total container*/
+/*bill total container - top*/
 .container {
     padding: 2rem;
 }
 
-/*controls two bottom containers*/
-.container-bottom,
-.totalContainer {}
+/*controls the increase and decrease of people - bottom container*/
+.container-bottom {
+    padding-right: 50px;
+
+
+}
 
 /* ORIGINAL CODE FOR THE BOTTOM CONTAINERS
 .container-bottom,
@@ -75,10 +78,34 @@ input[type=number]::-webkit-outer-spin-button {
 
 */
 
+.container-bottom,
+.totalContainer {
+    display: inline-block;
+    padding-top: 2rem;
+}
+
+/*controls the total per person component*/
+
+.totalContainer {
+    justify-content: flex-end;
+
+}
+
+/* controls the titling of all components */
+
 .title {
     font-weight: bold;
     margin-bottom: 0.6rem;
 }
+
+/*amt of people number & total per person*/
+.split-amt,
+.total {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+
 
 .inputContainer {
     background: #353959;
@@ -120,6 +147,10 @@ input[type=number]::-webkit-outer-spin-button {
     border: none;
 }
 
+.total {
+    font-weight: lighter;
+}
+
 .buttonText {
     color: #353959 !important;
 }
@@ -129,10 +160,6 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0.8rem;
 }
 
-
-.total {
-    font-size: 2rem;
-}
 
 
 .copyright {
