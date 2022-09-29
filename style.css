@@ -165,8 +165,10 @@ input[type=number]::-webkit-outer-spin-button {
 .copyright {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     font-size: 16px;
+    font-style: italic;
 }
 
 
