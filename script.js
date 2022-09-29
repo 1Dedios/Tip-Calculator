@@ -12,8 +12,35 @@ let numberOfPeople = Number(numberOfPeopleDiv.innerHTML);
 //same issue in the line above as described on line 4. Cannot redeclare the scoped variable.
 
 
-//below is the code that will run when 
-const caclulateBill = () => {
+
+// increases amt of people on the people component
+const increasePeople = () => {
+    numbrOfPeople += 1;
+
+    numberOfPeopleDiv.innerHTML = numbrOfPeople;
+
+    caclulateBill()
+
+}
+
+
+// decreases amt of people on the people component
+
+const decreasePeople = () => {
+    if (numbrOfPeople <= 1) {
+        return
+    } else {
+        numbrOfPeople -= 1
+
+        numberOfPeopleDiv.innerHTML = numbrOfPeople;
+
+        caclulateBill()
+    }
+
+}
+
+//below is the code that will run when you enter inputs
+caclulateBill = () => {
     const bill = Number(billInput.value)
 
 
@@ -28,26 +55,4 @@ const caclulateBill = () => {
     persPersonTotalDiv.innerHTML = `${perPersonTotal.toFixed(2)}`
 
 }
-
-const increasePeople = () => {
-    numbrOfPeople += 1;
-
-    numberOfPeopleDiv.innerHTML = numbrOfPeople;
-
-    caclulateBill()
-
-}
-
-const decreasePeople = () => {
-    if (numbrOfPeople <= 1) {
-        return
-    }
-
-    numbrOfPeople -= 1
-
-    numberOfPeopleDiv.innerHTML = numbrOfPeople;
-
-    caclulateBill()
-}
-
 
