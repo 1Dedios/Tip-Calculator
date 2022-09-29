@@ -26,7 +26,9 @@
             <div class="title">bill total</div>
             <div class="inputContainer">
                 <span>$</span>
-                <input type="number" placeholder="0.00" id="billTotalInput" onkeyup="calculateBill()" />
+                <!--added the min and max properties b/c of error with call stack-->
+                <input type="number" placeholder="0.00" id="billTotalInput" onkeyup="calculateBill()" min="1"
+                    max="1000000" />
             </div>
         </div>
         <div class="container">
@@ -36,7 +38,7 @@
             will revisit again.-->
             <div class="inputContainer">
                 <span>%</span>
-                <input type="number" onkeyup="calculateBill()" id="tipInput" placeholder="10" />
+                <input type="number" id="tipInput" placeholder="10" onkeyup="calculateBill()" />
             </div>
 
             <div class="container-bottom" id="bottom">
@@ -45,13 +47,13 @@
                     <div class="controls">
                         <span class="buttonContainer">
                             <button class="splitButton" onclick="decreasePeople()">
-                                <span class="buttonText" onclick="decreasePeople"> - </span>
+                                <span class="buttonText"> - </span>
                             </button>
                         </span>
-                        <span class="splitAmount split-amt" id="numberOfPeople"> 1 </span>
+                        <span class="splitAmount split-amt" id="numberOfPeople" onchange="calculateBill()"> 1 </span>
                         <span class="buttonContainer">
                             <button class="splitButton" onclick="increasePeople">
-                                <span class="buttonText button-text" onclick="increasePeople"> + </span>
+                                <span class="buttonText button-text"> + </span>
                             </button>
                         </span>
                     </div>
