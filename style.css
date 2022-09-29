@@ -81,7 +81,7 @@ input[type=number]::-webkit-outer-spin-button {
 .container-bottom,
 .totalContainer {
     display: inline-block;
-    padding-top: 2rem;
+    padding-top: 60px;
 }
 
 /*controls the total per person component*/
