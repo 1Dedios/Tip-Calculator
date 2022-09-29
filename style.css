@@ -82,6 +82,8 @@ input[type=number]::-webkit-outer-spin-button {
 .totalContainer {
     display: inline-block;
     padding-top: 60px;
+    /*helps to align the people and total component but total is slightly off*/
+    vertical-align: top;
 }
 
 /*controls the total per person component*/
@@ -149,6 +151,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .total {
     font-weight: lighter;
+    padding-left: 70px;
 }
 
 .buttonText {
