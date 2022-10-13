@@ -31,9 +31,12 @@ calculateBill = () => {
 
 const increasePeople = () => {
 
-    amtOfPeople += 1;
-
-    caclulateBill()
+    for (let i = 1; i >= 1; i++) {
+        numberOfPeopleSpan.innerText = amtOfPeople;
+        caclulateBill()
+    } else {
+        return
+    }
 }
 
 
