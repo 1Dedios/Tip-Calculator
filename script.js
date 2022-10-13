@@ -1,54 +1,41 @@
-const billInput = document.getElementById('billTotalInput')
-const tipInput = document.getElementById('tipInput')
-const amtOfPeople = document.getElementById('numberOfPeople')
-
-const perPersonTotal = document.getElementById('perPersonTotal')
-
-
-let numberOfPeople = Number(people.innerText);
-
-
+const billInput = document.getElementById('billTotalInput').value
+const tipInput = document.getElementById('tipInput').value
+const amtOfPeople = document.getElementById('numberOfPeople').value
 
 calculateBill = () => {
-    const bill = (billInput.value)
-    const tipPercent = (billInput.value) / 100;
-    const tipAmount = bill * tipPercent;
-    const total = tipAmount + bill;
-    const perPersonTotal = total / numberOfPeople;
-
-    bill * tipPercent;
-
-    tipAmount + bill;
+    const tipPercent = tipInput / 100;
+    const tipAmount = billInput * tipPercent;
+    const total = billInput + tipAmount;
+    const perPersonTotal = total / amtOfPeople;
 
     total / perPersonTotal;
 
-    perPersonTotal.innerText = `${perPersonTotal.toFixed(2)}`;
-
-
+    document.getElementById("perPersonTotal").innerText = `${perPersonTotal}`;
 }
 
 
 
-const increasePeople = () => {
+const incrementPeople = () => {
 
-    for (let i = 1; i >= 1; i++) {
-        numberOfPeopleSpan.innerText = amtOfPeople;
-        caclulateBill()
+    amtOfPeople += 1;
+    calculateBill();
+    document.getElementById("numberOfPeople").innerText = `${numberOfPeople}`
+}
+
+
+
+const decrementPeople = () => {
+
+    if (amtOfPeople == 1) {
+        return;
     } else {
-        return
+        amtOfPeople -= 1;
+        document.getElementById("numberOfPeople").innerText = `${numberOfPeople}`;
+        calculateBill();
     }
 }
 
 
 
-const decreasePeople = () => {
 
-    if (numberOfPeople <= 1) {
-        return
-    } else {
-        amtOfPeople -= 1
-        caclulateBill()
-        amtOfPeople.innerText = numberOfPeople;
-    }
 
-}
