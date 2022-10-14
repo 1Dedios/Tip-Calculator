@@ -55,8 +55,7 @@ input[type=number]::-webkit-outer-spin-button {
     font-weight: bold;
 }
 
-.title,
-.sign {
+.title {
     display: flex;
     flex-direction: row;
 }
@@ -70,28 +69,10 @@ input[type=number]::-webkit-outer-spin-button {
     width: 1.5rem;
 }
 
-
-#bottomcontainer {
-    padding: 30px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.people-title,
-.controls {
-    display: inline-block;
-    /* flex-direction: column; */
-
-}
-
 .output {
     font-weight: lighter;
-}
-
-.people-container,
-.total-container {
-    display: flex;
-    justify-content: space-around;
+    font-size: 1.25rem;
+    text-align: right;
 }
 
 .input-container {
@@ -121,18 +102,34 @@ input[type=number]::-webkit-outer-spin-button {
 button {
     background: #8990ec;
 
-    width: 1.6rem;
-    height: 1.6rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: bold;
-    color: orange;
 }
 
 
 .button-text {
     color: #353959 !important;
 
+}
+
+.people-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#bottomcontainer {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
 }
 
 
