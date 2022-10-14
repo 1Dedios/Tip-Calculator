@@ -66,11 +66,16 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 2rem 2rem;
 }
 
+.bill-total {
+    width: 1.5rem;
+}
+
 
 #bottomcontainer {
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* justify-content: center; */
+    display: flex;
+
+    align-content: center;
+
 
 }
 
@@ -85,6 +90,7 @@ input[type=number]::-webkit-outer-spin-button {
     justify-content: center;
     align-items: center;
     outline: none;
+    width: 250px;
 }
 
 
@@ -98,6 +104,8 @@ input[type=number]::-webkit-outer-spin-button {
     padding: none;
 } */
 
+.sign {}
+
 button {
     background: #8990ec;
 
@@ -106,6 +114,7 @@ button {
     border-radius: 50%;
     font-size: 0.8rem;
     font-weight: bold;
+    color: orange;
 }
 
 
