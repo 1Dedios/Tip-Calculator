@@ -24,10 +24,9 @@
         <div id="topcontainer">
             <!--bill total container-->
             <span class="title">bill total</span>
-            <div class="input-container">
+            <div>
                 <!--added the min and max properties b/c of error with call stack-->
-                <span class="sign">$</span>
-                <input type="number" placeholder="0.00" id="billTotalInput" min="1" max="1000000"
+                <input class="input-container" type="number" id="tipInput" placeholder="$0.00"
                     onkeyup="calculateBill()" />
             </div>
 
@@ -36,34 +35,42 @@
             <div id="tipcontainer">
                 <div class="title">tip</div>
                 <div>
-                    <span>%</span>
-                    <input class="input-container" type="number" id="tipInput" placeholder="10"
+                    <input class="input-container" type="number" id="tipInput" placeholder="10%"
                         onkeyup="calculateBill()" />
                 </div>
             </div>
         </div>
 
         <div id="bottomcontainer">
-            <div class="title">people</div>
-            <div>
-                <button onclick="decrementPeople()">
-                    <span> - </span>
-                </button>
+            <div class="people-container">
+                <div class="title people-title">people</div>
 
+                <div class="controls">
+                    <button onclick="decrementPeople()">
+                        <span class="sign"> - </span>
+                    </button>
+
+                    <div id="numberOfPeople" class="ouput"> 1 </div>
+
+                    <button onclick="incrementPeople()">
+                        <span> + </span>
+                    </button>
+
+                </div>
             </div>
 
-            <div id="numberOfPeople"> 1 </div>
+            <div class="total-container">
+                <div>
+                    <div class="title">total per person</div>
+                    <div id="perPersonTotal" class="output">$0.00</div>
+                </div>
 
-            <button onclick="incrementPeople()">
-                <span> + </span>
-            </button>
 
+
+
+            </div>
         </div>
 
-        <div>
-            <div class="title">total per person</div>
-            <div id="perPersonTotal">$0.00</div>
-        </div>
     </div>
 
     </div>

@@ -72,15 +72,27 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 #bottomcontainer {
+    padding: 30px;
     display: flex;
+    justify-content: space-between;
+}
 
-    align-content: center;
-
+.people-title,
+.controls {
+    display: inline-block;
+    /* flex-direction: column; */
 
 }
 
+.output {
+    font-weight: lighter;
+}
 
-
+.people-container,
+.total-container {
+    display: flex;
+    justify-content: space-around;
+}
 
 .input-container {
     background: #353959;
