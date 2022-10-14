@@ -7,38 +7,55 @@ let numberOfPeople = amtOfPeople.innerText;
 
 
 calculateBill = () => {
-    const bill = billInput.value;
-    const tipPercent = tipInput.value / 100;
+    const bill = Number(billInput.value);
+    const tipPercent = Number(tipInput.value) / 100;
     const tipAmount = bill * tipPercent;
     const total = bill + tipAmount;
-    const perPersontotal = total / numberOfPeople;
+    const perPersonTotal = total / numberOfPeople;
 
-    totalPerPersons.innerText = `${perPersontotal.toFixed(2)}`;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    totalPerPersons.innerText = `$${perPersonTotal.toFixed(2)}`
 }
 
 
 
-const incrementPeople = () => {
+// const incrementPeople = () => {
 
-    amtOfPeople += 1;
+//     amtOfPeople += 1;
 
-    calculateBill();
+//     calculateBill();
 
-    document.getElementById("numberOfPeople").innerText = `${numberOfPeople}`
-}
+//     document.getElementById("numberOfPeople").innerText = `${numberOfPeople}`
+// }
 
 
 
-const decrementPeople = () => {
+// const decrementPeople = () => {
 
-    if (amtOfPeople == 1) {
-        return;
-    } else {
-        amtOfPeople -= 1;
-        document.getElementById("numberOfPeople").innerText = `${numberOfPeople}`;
-        calculateBill();
-    }
-}
+//     if (amtOfPeople == 1) {
+//         return;
+//     } else {
+//         amtOfPeople -= 1;
+//         document.getElementById("numberOfPeople").innerText = `${numberOfPeople}`;
+//         calculateBill();
+//     }
+// }
 
 
 
