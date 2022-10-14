@@ -1,7 +1,7 @@
 const billInput = document.getElementById('billTotalInput')
 const tipInput = document.getElementById('tipInput')
 const amtOfPeople = document.getElementById('numberOfPeople')
-const totalPersons = document.getElementById('perPersonTotal')
+const totalPerPersons = document.getElementById('perPersonTotal')
 
 let numberOfPeople = amtOfPeople.innerText;
 
