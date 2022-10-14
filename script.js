@@ -13,7 +13,7 @@ calculateBill = () => {
     const total = bill + tipAmount;
     const perPersontotal = total / numberOfPeople;
 
-    totalPersons.innerText = `${perPersontotal}`;
+    totalPersons.innerText = `${perPersontotal.toFixed(2)}`;
 }
 
 

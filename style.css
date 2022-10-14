@@ -27,6 +27,18 @@ h1 {
     padding-bottom: 50px;
 }
 
+
+.wrapper {
+    height: 525px;
+    width: 360px;
+    color: white;
+    border-radius: 1.2rem;
+    background: linear-gradient(145deg, #7755af, #272639);
+    box-shadow: 24px 28px 67px #272639a5,
+        -34px -34px 67px #272639;
+    margin: auto;
+}
+
 input {
     caret-color: red;
 }
@@ -39,136 +51,67 @@ input[type=number]::-webkit-outer-spin-button {
     appearance: none;
 }
 
-.wrapper {
-    height: 525px;
-    width: 360px;
-    color: white;
-    border-radius: 1.2rem;
-    background: linear-gradient(145deg, #7755af, #272639);
-    box-shadow: 24px 28px 67px #272639a5,
-        -34px -34px 67px #272639;
-    margin: auto;
-
-}
-
-#topContainer {
-    padding: 2rem;
-}
-
-/*bill total container - top*/
-.container {
-    padding: 2rem;
-}
-
-/*controls the increase and decrease of people - bottom container*/
-.container-bottom {
-    padding-right: 60px;
-
-
-}
-
-/* ORIGINAL CODE FOR THE BOTTOM CONTAINERS
-.container-bottom,
-.totalContainer {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-*/
-
-/*controls the amt of ppl control and the total output*/
-
-.controls,
-.total {
-    display: inline-block;
-    vertical-align: top;
-}
-
-.container-bottom,
-.totalContainer {
-    display: inline-block;
-    padding-top: 60px;
-    /*helps to align the people and total component but total is slightly off*/
-    vertical-align: top;
-}
-
-/*controls the total per person component*/
-
-.totalContainer {
-    justify-content: flex-end;
-
-}
-
-/* controls the titling of all components */
-
 .title {
     font-weight: bold;
-    margin-bottom: 0.6rem;
 }
 
-/*amt of people number & total per person*/
-.split-amt,
-.total {
-    font-size: 2rem;
-    font-weight: lighter;
+.title,
+.sign {
+    display: flex;
+    flex-direction: row;
+}
+
+/* bill amount and tips */
+#topcontainer {
+    padding: 2rem 2rem;
+}
+
+
+#bottomcontainer {
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: center; */
+
 }
 
 
 
-.inputContainer {
+
+.input-container {
     background: #353959;
     border-radius: 1.4rem;
-    padding: 0 0.8rem;
+    padding: 0.4rem 0.8rem;
     display: flex;
+    justify-content: center;
     align-items: center;
+    outline: none;
 }
 
-#billTotalInput,
+
+
+/* #billTotalInput,
 #tipInput {
     font-size: 1.2rem;
     background: none;
     border: none;
     outline: none;
     padding: none;
-}
+} */
 
-.buttonContainer {
+button {
     background: #8990ec;
-    display: grid;
-    place-items: center;
+
     width: 1.6rem;
     height: 1.6rem;
     border-radius: 50%;
-}
-
-.controls {
-    display: flex;
-    align-items: center;
-}
-
-.splitButton {
     font-size: 0.8rem;
     font-weight: bold;
-    display: grid;
-    place-items: center;
-    background: none;
-    border: none;
 }
 
-.total {
-    font-weight: lighter;
-    padding-left: 70px;
-}
 
-.buttonText {
+.button-text {
     color: #353959 !important;
-}
 
-.splitAmount {
-    font-size: 1.6rem;
-    margin: 0.8rem;
 }
 
 

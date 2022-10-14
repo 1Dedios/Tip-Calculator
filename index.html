@@ -8,62 +8,64 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <title>Tip Calculator</title>
+    <title>Split Calculator</title>
 </head>
 
 <body>
     <h1>what the split?!</h1>
 
     <div class="illustration">
-        <img src="illustration1.png" alt="">
+        <img src="illustration1.png" alt="decorative">
     </div>
     <!--above is where I want to place the illustration of someone doing a split-->
 
     <!-- div below contains the entire calculator-->
     <div class="wrapper">
-        <div class="container" id="topContainer">
+        <div id="topcontainer">
             <!--bill total container-->
-            <div class="title">bill total</div>
-            <div class="inputContainer">
-                <span>$</span>
+            <span class="title">bill total</span>
+            <div class="input-container">
                 <!--added the min and max properties b/c of error with call stack-->
+                <span class="sign">$</span>
                 <input type="number" placeholder="0.00" id="billTotalInput" min="1" max="1000000"
                     onkeyup="calculateBill()" />
             </div>
-        </div>
-        <div class="container">
-            <div class="title">tip</div>
-            <!--I would change class to something like tip
-            but I don't know how the class will effect everything else. This is a tutorial
-            will revisit again.-->
-            <div class="inputContainer">
-                <span>%</span>
-                <input type="number" id="tipInput" placeholder="10" onkeyup="calculateBill()" />
-            </div>
 
-            <div class="container-bottom" id="bottom">
-                <div class="splitContainer">
-                    <div class="title">people</div>
-                    <div class="controls">
-                        <span class="buttonContainer">
-                            <button class="splitButton" onclick="decrementPeople()">
-                                <span class="buttonText"> - </span>
-                            </button>
-                        </span>
-                        <span class="splitAmount split-amt" id="numberOfPeople"> 1 </span>
-                        <span class="buttonContainer">
-                            <button class="splitButton" onclick="incrementPeople()">
-                                <span class="buttonText button-text"> + </span>
-                            </button>
-                        </span>
-                    </div>
+            <br>
+
+            <div id="tipcontainer">
+                <div class="title">tip</div>
+                <div>
+                    <span>%</span>
+                    <input class="input-container" type="number" id="tipInput" placeholder="10"
+                        onkeyup="calculateBill()" />
                 </div>
             </div>
-            <div class="totalContainer">
-                <div class="title">total per person</div>
-                <div class="total" id="perPersonTotal">$0.00</div>
-            </div>
         </div>
+
+        <div id="bottomcontainer">
+            <div class="title">people</div>
+            <div>
+                <button onclick="decrementPeople()">
+                    <span> - </span>
+                </button>
+
+            </div>
+
+            <div id="numberOfPeople"> 1 </div>
+
+            <button onclick="incrementPeople()">
+                <span> + </span>
+            </button>
+
+        </div>
+
+        <div>
+            <div class="title">total per person</div>
+            <div id="perPersonTotal">$0.00</div>
+        </div>
+    </div>
+
     </div>
 
     <div class="copyright"> &#169; Calculator Created & Designed by Dedios </div>
