@@ -13,49 +13,39 @@ calculateBill = () => {
     const total = bill + tipAmount;
     const perPersonTotal = total / numberOfPeople;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     totalPerPersons.innerText = `$${perPersonTotal.toFixed(2)}`
+};
+
+
+
+const incrementPeople = () => {
+
+    numberOfPeople++
+
+    amtOfPeople.innerText = numberOfPeople
+
+    calculateBill()
+
+
+    // for (let i = 1; i <= numberOfPeople; numberOfPeople++) {
+
+    //     document.getElementById("numberOfPeople").innerText = `${numberOfPeople}`;
+
 }
 
 
 
-// const incrementPeople = () => {
+const decrementPeople = () => {
 
-//     amtOfPeople += 1;
+    if (numberOfPeople == 1) {
+        return;
+    } else {
+        numberOfPeople -= 1;
+        document.getElementById("numberOfPeople").innerText = `${numberOfPeople}`;
 
-//     calculateBill();
-
-//     document.getElementById("numberOfPeople").innerText = `${numberOfPeople}`
-// }
-
-
-
-// const decrementPeople = () => {
-
-//     if (amtOfPeople == 1) {
-//         return;
-//     } else {
-//         amtOfPeople -= 1;
-//         document.getElementById("numberOfPeople").innerText = `${numberOfPeople}`;
-//         calculateBill();
-//     }
-// }
+        calculateBill();
+    }
+}
 
 
 
