@@ -1,16 +1,19 @@
-const billInput = document.getElementById('billTotalInput').value
-const tipInput = document.getElementById('tipInput').value
-const amtOfPeople = document.getElementById('numberOfPeople').value
+const billInput = document.getElementById('billTotalInput')
+const tipInput = document.getElementById('tipInput')
+const amtOfPeople = document.getElementById('numberOfPeople')
+const totalPersons = document.getElementById('perPersonTotal')
+
+let numberOfPeople = amtOfPeople.innerText;
+
 
 calculateBill = () => {
-    const tipPercent = tipInput / 100;
-    const tipAmount = billInput * tipPercent;
-    const total = billInput + tipAmount;
-    const perPersonTotal = total / amtOfPeople;
+    const bill = billInput.value;
+    const tipPercent = tipInput.value / 100;
+    const tipAmount = bill * tipPercent;
+    const total = bill + tipAmount;
+    const perPersontotal = total / numberOfPeople;
 
-    total / perPersonTotal;
-
-    document.getElementById("perPersonTotal").innerText = `${perPersonTotal}`;
+    totalPersons.innerText = `${perPersontotal}`;
 }
 
 
@@ -18,7 +21,9 @@ calculateBill = () => {
 const incrementPeople = () => {
 
     amtOfPeople += 1;
+
     calculateBill();
+
     document.getElementById("numberOfPeople").innerText = `${numberOfPeople}`
 }
 
