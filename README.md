@@ -1,6 +1,6 @@
 # Tip-Calculator
 
-Site: 
+Site for App: 
 
 https://1dedios.github.io/Tip-Calculator/
 
@@ -13,7 +13,7 @@ A Tip Calculator that shows you what the total pay would be for ANY bill with or
 
 ***
 
-## Screenshot of Landing Page:
+## Screenshot of Calculator App:
 
 ![Tip Calculator Screenshot](image/Screenshot.png "Tip Calculator Still")
 
@@ -30,9 +30,13 @@ A Tip Calculator that shows you what the total pay would be for ANY bill with or
 
 ## Success Criteria:
 
-- Extra practice for myself. 🤷🏽‍♂️🎉  
+- ✅ To make a calculator app that could calculate any bill total along with a corresponding tip and be split in any number of ways. 🎉  
+- ✅ Show off some design skills 🎨 
+- Responsive design for mobile. 
+    - However, the plus (+) and minus (-) are not centered on my iphone 13  pro max
+
 <br>
-- Also, challenged myself by placing active elements on the page without the use of Javascript. 
+
 
 ***
 
@@ -42,8 +46,7 @@ A Tip Calculator that shows you what the total pay would be for ANY bill with or
 2. Illustrated Image - [Design Stripe](https://designstripe.com/)
 3. Sneaker Icons - [Flaticons](https://www.flaticon.com/)
 4. Quote Section Image - [Mountain Image](https://www.pexels.com/photo/gray-and-brown-mountain-417173/) 📸
-5. Canva - Where I created the navbar logo/video.
-6. Documenation (Organized by date - *not edited*) - [Documentation](https://www.notion.so/dediosprogramming/Odin-Landing-Page-965fd444c2554ceea97a1d20bce50e99) 📝
+6. Documenation (Organized by date - *not edited*) - [Documentation](https://www.notion.so/dediosprogramming/Tip-Calculator-5db52949642b4b7ab6de7ec888bc92b0) 📝
 
 ***
 
