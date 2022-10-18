@@ -15,7 +15,7 @@ A Tip Calculator that shows you what the total pay would be for ANY bill with or
 
 ## Screenshot of Landing Page:
 
-![Tip Calulator Screenshot](image/screenshot.png "Tip Calculator Still")
+![Tip Calculator Screenshot](image/screenshot.png "Tip Calculator Still")
 
 
 ***
