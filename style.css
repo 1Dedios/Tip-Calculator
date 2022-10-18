@@ -133,6 +133,11 @@ button {
         margin: auto;
     }
 
+    .sign {
+        margin: auto;
+    }
+
+
     .copyright {
         font-size: 12px;
         display: flex;
