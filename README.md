@@ -9,9 +9,7 @@ https://1dedios.github.io/Tip-Calculator/
 ## Summary:
 
 
-The Odin Project's first project. 
-
-I was supposed to build a basic landing page with generic placeholders for images and text. I decided to make it my own and used a CSS framework - Bootstrap. Essentially, more practice for me.
+A Tip Calculator that shows you what the total pay would be for ANY bill with or without tip. Regardless of how many people you want to split the total with. 
 
 ***
 
@@ -19,7 +17,6 @@ I was supposed to build a basic landing page with generic placeholders for image
 
 ![Tip Calulator Screenshot](/image/screenshot.png "Tip Calculator Still")
 
-👉🏽 What I was supposed to deliver can be found [HERE](https://cdn.statically.io/gh/TheOdinProject/curriculum/81a5d553f4073e593d23a6ab00d50eef8620796d/foundations/html_css/project/imgs/01.png)
 
 ***
 
