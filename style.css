@@ -134,7 +134,7 @@ button {
     }
 
     .sign {
-        margin: auto;
+        float: center;
     }
 
 
