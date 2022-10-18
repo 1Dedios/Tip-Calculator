@@ -2,13 +2,10 @@
     font-family: 'M PLUS Rounded 1c', Avenir Next, Helvetica, sans-serif;
     color: white;
     font-variant: small-caps;
-    /*cool property to make everything cap but making
-    the caret look larger because it's a smaller version.*/
 }
 
 body {
     background: #FF8066;
-    /*still debating what color pallete to go with*/
 }
 
 h1 {
@@ -51,16 +48,14 @@ input[type=number]::-webkit-outer-spin-button {
     appearance: none;
 }
 
-.title {
-    font-weight: bold;
-}
 
 .title {
+    font-weight: bold;
     display: flex;
     flex-direction: row;
 }
 
-/* bill amount and tips */
+
 #topcontainer {
     padding: 2rem 2rem;
 }
@@ -87,21 +82,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 
-
-/* #billTotalInput,
-#tipInput {
-    font-size: 1.2rem;
-    background: none;
-    border: none;
-    outline: none;
-    padding: none;
-} */
-
-.sign {}
-
 button {
     background: #8990ec;
-
     width: 2rem;
     height: 2rem;
     border-radius: 50%;

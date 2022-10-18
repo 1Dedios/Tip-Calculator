@@ -26,11 +26,6 @@ const incrementPeople = () => {
 
     calculateBill()
 
-
-    // for (let i = 1; i <= numberOfPeople; numberOfPeople++) {
-
-    //     document.getElementById("numberOfPeople").innerText = `${numberOfPeople}`;
-
 }
 
 
