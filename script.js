@@ -6,7 +6,7 @@ const totalPerPersons = document.getElementById('perPersonTotal')
 let numberOfPeople = amtOfPeople.innerText;
 
 
-const calculateBill = () => {
+export const calculateBill = () => {
     const bill = Number(billInput.value);
     const tipPercent = Number(tipInput.value) / 100;
     const tipAmount = bill * tipPercent;
@@ -18,7 +18,7 @@ const calculateBill = () => {
 
 
 
-const incrementPeople = () => {
+export const incrementPeople = () => {
 
     numberOfPeople++
 
@@ -30,7 +30,7 @@ const incrementPeople = () => {
 
 
 
-const decrementPeople = () => {
+export const decrementPeople = () => {
 
     if (numberOfPeople == 1) {
         return;
