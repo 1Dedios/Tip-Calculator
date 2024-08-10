@@ -1,6 +1,10 @@
 # Tip-Calculator
 
-(Site for App)[https://1dedios.github.io/Tip-Calculator/]
+[Site for App](https://1dedios.github.io/Tip-Calculator/)
+
+## Table of Contents
+1. [Success Criteria](#Success-Criteria)
+2. [Dependencies](#Dependencies)
 
 ## Summary:
 A Tip Calculator that shows you what the total pay would be for ANY bill with or without tip. Regardless of how many people you want to split the total with. 
@@ -8,10 +12,6 @@ A Tip Calculator that shows you what the total pay would be for ANY bill with or
 ## Screenshot of Calculator App:
 
 ![Tip Calculator Screenshot](image/Screenshot.png "Tip Calculator Still")
-
-## Table of Contents
-1. [Success Criteria](#Success-Criteria)
-2. [Dependencies](#Dependencies)
 
 ## Success Criteria:
 - ✅ To make a calculator app that could calculate any bill total along with a corresponding tip and be split in any number of ways. 🎉  
