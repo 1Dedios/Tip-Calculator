@@ -61,8 +61,14 @@
             </div>
         </div>
     </div>
-    <div class="copyright"> &#169; 2022-2025 Mr. P </div>
+    <p class="copyright">Dedios &#169; 2022-<span id="footer-year">2025</span></p>
 
+    <script type="text/javascript">
+        let time = new Date();
+        let yearValue = time.getFullYear();
+        let footerYear = document.getElementById("footer-year").innerText;
+        footerYear = yearValue;
+    </script>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
