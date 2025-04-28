@@ -13,7 +13,7 @@ A Tip Calculator that shows you what the total pay would be for ANY bill with or
 
 ## Screenshot of App
 
-![Tip Calculator Screenshot](./Images/screenshot.png "Tip Calculator Still")
+![Tip Calculator Screenshot](https://personal-site.b-cdn.net/screenshot.png "Tip Calculator Still")
 
 ## Success Criteria
 
